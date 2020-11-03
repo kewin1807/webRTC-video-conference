@@ -38,8 +38,8 @@ Passwords = {}
 
 io.on('connection', (socket) => {
 	socket.on("auth", (path, password) => {
-		console.log(password)
-		console.log(Passwords[path])
+		console.log("password: ", password)
+		console.log("password available: ", Passwords[path])
 
 		if (Passwords[path] && Passwords[path] !== password) {
 			io.emit("accept", { status: 401, message: "Wrong password, authentication failed" });

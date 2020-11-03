@@ -2,7 +2,6 @@
   "name": "video",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kewin1807.github.io/webRTC-video-conference/",
   "dependencies": {
     "@material-ui/core": "^4.9.7",
     "@material-ui/icons": "^4.9.1",
@@ -33,6 +32,7 @@
     "socket.io": "^2.3.0",
     "socket.io-client": "^2.3.0",
     "standard": "^14.3.3",
+    "use-state-with-callback": "^2.0.3",
     "xss": "^1.0.8"
   },
   "scripts": {
@@ -42,7 +42,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build", 
+    "deploy": "gh-pages -d build",
     "start": "concurrently -n 'server,client' -c 'red,green'  \"nodemon app.js\" \"NODE_ENV=production PORT=8000 react-scripts start\""
   },
   "eslintConfig": {

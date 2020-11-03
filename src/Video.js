@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 import io from 'socket.io-client'
 import faker from "faker"
@@ -63,6 +62,7 @@ class Video extends Component {
 		}
 		connections = {}
 		this.getPermissions()
+
 	}
 	componentDidMount() {
 		if (this.props && this.props.location.state && this.props.location.state.username) {
@@ -578,4 +578,4 @@ class Video extends Component {
 		)
 	}
 }
-export default Video
+export default Video;
